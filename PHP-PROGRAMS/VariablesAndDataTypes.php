@@ -14,5 +14,7 @@ echo "<br/>";
 
 $arr = [10, 20, "PHP", 8.2, true, "PHP-V.8.2.18", false];
 print_r($arr);
+echo "<br/>";
+echo implode(", ", $arr);
 
 ?>
