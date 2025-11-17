@@ -6,7 +6,7 @@ $number = 11;
 $isPrime = false;
 
 for($i=2; $i<=($number/2); $i++) {
-    if(($number/i) === 0) {
+    if(($number/$i) === 0) {
         echo "$number is not a prime number";
         break;
     } else {
