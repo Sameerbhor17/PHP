@@ -25,8 +25,9 @@ $exp = $number1 ** 2;
 echo "Exponent of $number1 raised to 2 is $exp<br/>";
 
 //modulus
-$mod = $number2 % ($number1 + 11);
-echo "Remainder of $number2 divided by ($number1+11) is $mod";
+$number3 = $number1 + 13;
+$mod = $number2 % $number3;
+echo "Remainder of $number2 divided by $number3 is $mod";
 
 
 ?>
