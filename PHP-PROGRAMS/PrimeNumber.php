@@ -1,6 +1,6 @@
 <?php
 
-$number = 12;
+$number = 17;
 $isPrime = true;
 
 if ($number <= 1) {
