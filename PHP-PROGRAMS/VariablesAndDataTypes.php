@@ -12,9 +12,9 @@ $boolean_data = true; //PHP Boolean Data - true or false
 echo $boolean_data;
 echo "<br/>";
 
-$arr = [10, 20, "PHP", 8.2, true, "PHP-V.8.2.18", false];
+$arr = [10, 20, "PHP", 8.2, true, "PHP Version 8.2.18", "false"];
 print_r($arr);
 echo "<br/>";
-echo implode(", ", $arr);
+echo implode(", ", $arr); //array to comma seperated strings
 
 ?>
