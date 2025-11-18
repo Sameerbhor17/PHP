@@ -23,11 +23,11 @@ function swapping($num1, $num2) {
     echo "<b>Numbers after swapping num1=$num1 and num2=$num2</b>";
 }
 
-swap(20, 50);
+swap($a, $b);
 
 echo "<br/>";
 $num1 = 100;
 $num2 = 200;
 echo "<b>Numbers before swapping num1=$num1 and num2=$num2</b><br/>";
-swapping(20, 50);
+swapping($num1, $num2);
 ?>
