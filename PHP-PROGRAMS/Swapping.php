@@ -25,7 +25,7 @@ function swapping($num1, $num2) {
 
 swap($a, $b);
 
-echo "<br/><br/><hr/><br/><br/>";
+echo "<br/><br/><hr/><br/>";
 $num1 = 100;
 $num2 = 200;
 echo "<b>Numbers before swapping num1=$num1 and num2=$num2</b><br/>";
