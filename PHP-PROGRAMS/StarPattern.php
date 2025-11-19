@@ -23,9 +23,9 @@
     echo "<b>Reverse Rotated Star Pattern</b> <br/>";
     for($i = $n; $i >= 1; $i--) {
         for($j = 1; $j <= $n-$i; $j++) {
-            echo " ";
+            echo "&nbsp;";
         }
-        for($k = 1; $k <= $i; $k++) {
+        for($j = 1; $j <= $i; $j++) {
             echo "*";
         }
         echo "<br/>";
