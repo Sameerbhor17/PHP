@@ -25,7 +25,7 @@
         for($j = 1; $j <= $n-$i; $j++) {
             echo " ";
         }
-        for($j = 1; $j <= $i; $j++) {
+        for($k = 1; $k <= $i; $k++) {
             echo "*";
         }
         echo "<br/>";
