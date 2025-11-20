@@ -23,7 +23,7 @@
             if($i === 1 || $j === 1 || $i === $n || $j === $n) {
                 echo "*";
             } else {
-                echo "&nbsp";
+                echo "&nbsp;&nbsp;";
             }
         }
         echo "<br/>";
