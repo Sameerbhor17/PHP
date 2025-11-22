@@ -38,4 +38,32 @@
     echo "<br/>";
   }
 
+  //Diamond Pattern
+  echo "<br/>";
+  echo "<b>Diamond Pattern</b><br/>";
+  echo "<br/>";
+
+  for($i = 1; $i <= $n; $i++) {
+    for($j = 1; $j <= ($n - $i); $j++) {
+      echo "&nbsp;&nbsp;";
+    }
+
+    $stars = 2*$i-1;
+    for($j = 1; $j <= $stars; $j++) {
+      echo "*";
+    }
+    echo "<br/>";
+  }
+
+  for($i = $n; $i >= 1; $i--) {
+    for($j = 1; $j <= ($n - $i); $j++) {
+      echo "&nbsp;&nbsp;";
+    }
+
+    $stars = 2*$i-1;
+    for($j = 1; $j <= $stars; $j++) {
+      echo "*";
+    }
+    echo "<br/>";
+  }
 ?>
