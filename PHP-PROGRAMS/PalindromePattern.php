@@ -15,7 +15,7 @@
             echo "$j";
         }
 
-        for($j = $i; $j >= 1; $j--) {
+        for($j = 2; $j <= $i; $j++) {
             echo "$j";
         }
         echo "<br/>";
