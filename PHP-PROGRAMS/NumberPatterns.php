@@ -50,10 +50,10 @@
     }
 
     echo "<br/>";
-    echo "Number Increment Pyramid";
+    echo "Number Increment Pyramid<br/>";
     echo "<br/>";
     $num = 1;
-    for($i = 1; $i <= $n; $i++) {
+    for($i = 1; $i < $n; $i++) {
         for($j = 1; $j <= ($n - $i); $j++) {
             echo "&nbsp;&nbsp;";
         }
