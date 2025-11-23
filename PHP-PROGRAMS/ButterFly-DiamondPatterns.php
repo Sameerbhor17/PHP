@@ -119,4 +119,39 @@
     echo "<br/>";
   }
 
+  //Hollow Diamond Pattern
+  echo "<br/>";
+  echo "<b>Hollow Diamond Pattern</b><br/>";
+  echo "<br/>";
+
+  for($i = 1; $i <= $n; $i++) {
+    for($j = 1; $j <= ($n - $i); $j++) {
+      echo "&nbsp;&nbsp;";
+    }
+
+    $star = 2 * $i - 1;
+    for($j = 1; $j <= $star; $j++) {
+      if($j == 1 || $j == $star) {
+        echo "*";
+      } else {
+        echo "&nbsp;&nbsp;";
+      }
+    }
+    echo "<br/>";
+  }
+  for($i = $n; $i >= 1; $i--) {
+    for($j = 1; $j <= ($n - $i); $j++) {
+      echo "&nbsp;&nbsp;";
+    }
+
+    $star = 2 * $i - 1;
+    for($j = 1; $j <= $star; $j++) {
+      if($j == 1 || $j == $star) {
+        echo "*";
+      } else {
+        echo "&nbsp;&nbsp;";
+      }
+    }
+    echo "<br/>";
+  }
 ?>
