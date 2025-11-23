@@ -68,6 +68,9 @@
   }
 
   //Hollow ButterFly Pattern
+  echo "<br/>";
+  echo "<b>Hollow ButterFly Pattern</b><br/>";
+  echo "<br/>";
   for($i = 1; $i <= $n; $i++) {
     for($j = 1; $j <= $i; $j++) {
       if($j == 1 || $j == $i) {
@@ -83,9 +86,13 @@
     }
 
     for($j = 1; $j <= $i; $j++) {
-      echo "*";
+      if($j == 1 || $j == $i) {
+        echo "*";
+      } else {
+        echo "&nbsp;&nbsp;";
+      }
     }
-    echo "&nbsp;&nbsp;";
+    echo "<br/>";
   }
 
   for($i = $n; $i >= 1; $i--) {
@@ -103,9 +110,13 @@
     }
 
     for($j = 1; $j <= $i; $j++) {
-      echo "*";
+      if($j == 1 || $j == $i) {
+        echo "*";
+      } else {
+        echo "&nbsp;&nbsp;";
+      }
     }
-    echo "&nbsp;&nbsp;";
+    echo "<br/>";
   }
-  
+
 ?>
