@@ -2,8 +2,8 @@
 
     $n = 5;
 
-    //Palindrome Pattern
-    echo "<b>Palindrome Pattern<b><br/>";
+    //Palindrome Pyramid Pattern
+    echo "<b>Palindrome Pyramid Pattern<b><br/>";
     echo "<br/>";
 
     for($i = 1; $i <= $n; $i++) {
@@ -21,12 +21,15 @@
         echo "<br/>";
     }
 
-    //Number Triangle
+    //Number Pyramid
     echo "<br/>";
-    echo "<b>ith Number Triangle</b><br/>";
+    echo "<b>ith Number Pyramid</b><br/>";
     echo "<br/>";
 
     for($i = 1; $i <= $n; $i++) {
+        for($j = 1; $j <= ($n - $i); $j++) {
+            echo "&nbsp;&nbsp;";
+        }
         for($j = 1; $j <= $i; $j++) {
             echo "$i";
         }
@@ -34,9 +37,12 @@
     }
 
     echo "<br/>";
-    echo "<b>jth Number Triangle</b><br/>";
+    echo "<b>jth Number Pyramid</b><br/>";
     echo "<br/>";
     for($i = 1; $i <= $n; $i++) {
+        for($j = 1; $j <= ($n - $i); $j++) {
+            echo "&nbsp;&nbsp;";
+        }
         for($j = 1; $j <= $i; $j++) {
             echo "$j";
         }
@@ -44,10 +50,13 @@
     }
 
     echo "<br/>";
-    echo "Number Increment Triangle";
+    echo "Number Increment Pyramid";
     echo "<br/>";
     $num = 1;
     for($i = 1; $i <= $n; $i++) {
+        for($j = 1; $j <= ($n - $i); $j++) {
+            echo "&nbsp;&nbsp;";
+        }
         for($j = 1; $j <= $i; $j++) {
             echo "$num &nbsp;&nbsp;";
             $num++;
