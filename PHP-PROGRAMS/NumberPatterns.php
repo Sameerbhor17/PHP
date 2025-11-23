@@ -31,7 +31,7 @@
             echo "&nbsp;&nbsp;";
         }
         for($j = 1; $j <= $i; $j++) {
-            echo "$i";
+            echo "$i &nbsp;&nbsp;";
         }
         echo "<br/>";
     }
@@ -44,7 +44,7 @@
             echo "&nbsp;&nbsp;";
         }
         for($j = 1; $j <= $i; $j++) {
-            echo "$j";
+            echo "$j &nbsp;&nbsp;";
         }
         echo "<br/>";
     }
