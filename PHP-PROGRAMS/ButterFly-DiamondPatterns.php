@@ -66,4 +66,46 @@
     }
     echo "<br/>";
   }
+
+  //Hollow ButterFly Pattern
+  for($i = 1; $i <= $n; $i++) {
+    for($j = 1; $j <= $i; $j++) {
+      if($j == 1 || $j == $i) {
+        echo "*";
+      } else {
+        echo "&nbsp;&nbsp;";
+      }
+    }
+
+    $spaces = 2*($n - $i);
+    for($j = 1; $j <= $spaces; $j++) {
+      echo "&nbsp;&nbsp;";
+    }
+
+    for($j = 1; $j <= $i; $j++) {
+      echo "*";
+    }
+    echo "&nbsp;&nbsp;";
+  }
+
+  for($i = $n; $i >= 1; $i--) {
+    for($j = 1; $j <= $i; $j++) {
+      if($j == 1 || $j == $i) {
+        echo "*";
+      } else {
+        echo "&nbsp;&nbsp;";
+      }
+    }
+
+    $spaces = 2*($n - $i);
+    for($j = 1; $j <= $spaces; $j++) {
+      echo "&nbsp;&nbsp;";
+    }
+
+    for($j = 1; $j <= $i; $j++) {
+      echo "*";
+    }
+    echo "&nbsp;&nbsp;";
+  }
+  
 ?>
