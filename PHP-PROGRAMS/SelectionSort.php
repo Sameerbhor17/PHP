@@ -8,24 +8,25 @@
     printArr($arr);
 
     echo "<br/>";
+    echo "<br/>";
     echo "<b>Array After Sorting Using Selection Sort: </b><br/>";
     echo "<br/>";
     selectionSort($arr);
     printArr($arr);
 
-    function selectionSort($arr) {
-        for($i = 0; $i < count($arr); $i++) {
+    function selectionSort(&$arr) {
+        for($i = 0; $i < count($arr)-1; $i++) {
             $smallest = $i;
-            for($j = $i+1; $j <= count($arr); $j++) {
+            for($j = $i+1; $j < count($arr); $j++) {
                 if($arr[$j] < $arr[$smallest]) {
                     $smallest = $j;
                 }
             }
 
             //swapp
-            $arr[$smallest] = $arr[$i];
-            $arr[$i] = $arr[$i+1];
-            $arr[$i+1] = $arr[$smallest];
+            $temp = $arr[$i];
+            $arr[$i] = $arr[$smallest];
+            $arr[$smallest] = $temp;
         }
     }
 
